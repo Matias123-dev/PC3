@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 4 - CSS Moderno y Compatibilidad</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <main class="contenedor">
+  
+        <section class="panel">
+            <h1>Panel de Perfil Profesional</h1>
+
+            <p class="descripcion">
+                Este componente implementa propiedades modernas de CSS 
+                (Glassmorphism, <code>color-mix()</code>, <code>@supports</code>) 
+                garantizando una experiencia fluida y accesible en todos los navegadores.
+            </p>
+
+            <div class="rejilla">
+                <article class="tarjeta">
+                    <h2>Diseño Adaptable</h2>
+                    <p>Rejilla fluida mediante CSS Grid que se ajusta a dispositivos móviles y de escritorio.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h2>CSS Moderno</h2>
+                    <p>Uso de <code>@supports</code> para detección de funciones avanzadas y paletas dinámicas.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h2>Accesibilidad</h2>
+                    <p>Pausa o elimina las animaciones al detectar <code>prefers-reduced-motion</code>.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="compatibilidad">
+            <h2>Informe de Compatibilidad</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Navegador</th>
+                        <th>Resultado esperado y observado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Google Chrome</strong> (v110+)</td>
+                        <td>Soporte total para <code>color-mix()</code>, <code>backdrop-filter</code> y la detección mediante <code>@supports</code>. El degradado de cristal y los colores mixtos se renderizan sin fallos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mozilla Firefox</strong> (v113+)</td>
+                        <td>Visualización idéntica a Chrome. Soporte nativo de <code>color-mix()</code> y <code>backdrop-filter</code> sin requerir flags ni prefijos adicionales.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="fuente">
+                <strong>Fuente consultada:</strong>
+                <a href="https://developer.mozilla.org/docs/Web/CSS/@supports" target="_blank" rel="noopener noreferrer">
+                    Documentación MDN (@supports)
+                </a> |
+                <a href="https://caniuse.com/css-color-mix" target="_blank" rel="noopener noreferrer">
+                    CanIUse (color-mix)
+                </a>
+            </p>
+        </section>
+    </main>
+
+</body>
+</html>
